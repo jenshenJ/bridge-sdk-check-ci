@@ -12,7 +12,6 @@ jobs:
     permissions:
       contents: write  # Needed to create git tag
       id-token: write  # Needed for NPM provenance
-    if: github.repository == 'ton-org/bridge-sdk'
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
